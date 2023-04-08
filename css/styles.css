@@ -36,10 +36,15 @@ body {
   padding: 94px 0;
 }
 .section-menu {
-  padding: 24px 0px 25px 0px;
+  padding: 24px 0 25px;
+  border-bottom: solid;
+  border-color: #ececec;
+}
+.section-description {
+  padding-top: 94px;
 }
 .section-footer {
-  padding: 60px 0px;
+  padding: 60px 0;
 }
 .container {
   max-width: 1200px;
@@ -49,6 +54,7 @@ body {
 .container-menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .container-menu-nav {
   gap: 46px;
@@ -57,18 +63,10 @@ body {
   gap: 50px;
 }
 .container-head-row {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 106px 0px;
-  gap: 30px;
+  text-align: center;
+  padding: 106px 0;
 }
-.container-description {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  align-items: center;
-}
+.container-description,
 .container-photoboxes {
   display: flex;
   justify-content: space-between;
@@ -89,15 +87,13 @@ body {
 .container-posts {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   gap: 30px;
   padding-top: 50px;
 }
 .container-footer {
   padding-top: 20px;
-  display: flex;
-  flex-direction: column;
   gap: 9px;
 }
 .logo {
@@ -114,10 +110,11 @@ body {
 .logo-highlight {
   color: var(--color-text-light);
 }
-.nav-link .menu-address {
+.nav-link,
+.menu-address {
   font-weight: 500;
   line-height: 1.1;
-  margin: 32px 0px 32px 0px;
+  font-size: 14px;
 }
 .nav-link {
   color: var(--color-text-primary);
@@ -139,6 +136,8 @@ body {
   letter-spacing: 0.06em;
   width: 696px;
   text-align: center;
+  margin: auto;
+  padding-bottom: 30px;
 }
 .top-row {
   background: var(--bgcolor-dark);
@@ -171,6 +170,7 @@ body {
   font-size: 14px;
   line-height: 1.1;
   width: 270px;
+  padding-top: 10px;
 }
 .header-team {
   font-weight: 500;
@@ -222,7 +222,7 @@ body {
 .project-type {
   line-height: 1.8;
   color: var(--color-text-secondary);
-  margin: 4px 0px 20px 24px;
+  margin: 4px 0 20px 24px;
 }
 .footer {
   background: var(--bgcolor-dark);
@@ -233,5 +233,5 @@ body {
   color: var(--color-text-light);
 }
 .footer-address-opacity {
-  opacity: 0.8;
+  opacity: 0.6;
 }
